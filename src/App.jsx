@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { useState } from 'react';
 import '../src/assets/styles.css';
 import Home from './components/Home';
-import Year2025 from './components/Year2025';
 import Lisatiedot from './components/Lisatiedot';
 import Osallistujat from './components/Osallistujat';
 import Kartta from './components/Kartta';
@@ -20,7 +19,7 @@ function App() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/2025">2025</Link>
+              <span className="vuosi2025">2025</span>
               <ul>
                 <li>
                   <Link to="/2025/lisatiedot">Lisätiedot</Link>
@@ -41,7 +40,6 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/2025" element={<Year2025 />} />
           <Route path="/2025/lisatiedot" element={<Lisatiedot />} />
           <Route path="/2025/osallistujat" element={<Osallistujat />} />
           <Route path="/2025/kartta" element={<Kartta />} />
