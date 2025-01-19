@@ -1,35 +1,55 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { useState } from 'react';
+import '../src/assets/styles.css';
+import Home from './components/Home';
+import Year2025 from './components/Year2025';
+import Lisatiedot from './components/Lisatiedot';
+import Osallistujat from './components/Osallistujat';
+import Kartta from './components/Kartta';
+import Ilmoittautuminen from './components/Ilmoittautuminen';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <>
+    <Router>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/2025">2025</Link>
+              <ul>
+                <li>
+                  <Link to="/2025/lisatiedot">Lisätiedot</Link>
+                </li>
+                <li>
+                  <Link to="/2025/osallistujat">Osallistujat</Link>
+                </li>
+                <li>
+                  <Link to="/2025/kartta">Kartta</Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Link to="/ilmoittautuminen">Ilmoittautuminen</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/2025" element={<Year2025 />} />
+          <Route path="/2025/lisatiedot" element={<Lisatiedot />} />
+          <Route path="/2025/osallistujat" element={<Osallistujat />} />
+          <Route path="/2025/kartta" element={<Kartta />} />
+          <Route path="/ilmoittautuminen" element={<Ilmoittautuminen />} />
+        </Routes>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;
