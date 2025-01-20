@@ -11,7 +11,8 @@ body {
     background-color: #120069;
     font-weight: 600;
     padding: 10px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 9px rgba(184, 0, 217, 0.8), 0 10px 20px rgba(169, 165, 165, 0.6);
+    border-radius: 0; /* Sharp corners */
   }
   
   nav ul {
@@ -38,7 +39,8 @@ body {
     margin-left: 2%;
     background-color: #1f2937;
     border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
   }
   
   nav ul li:hover ul {
@@ -58,16 +60,17 @@ body {
     display: block;
     transition: color 0.3s, background-color 0.3s;
   }
-
-    .vuosi2025 {
-        color: silver;
-    }
+  
+  .vuosi2025 {
+    color: silver;
+  }
   
   nav ul li a:hover {
     text-decoration: underline;
     color: #fff;
     background-color: #2d1296;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
   }
   
   nav ul li ul li a:hover {
@@ -100,7 +103,7 @@ body {
   
     nav ul li {
       margin-right: 0;
-      width: 100%;
+      width: 60%;
     }
   
     nav ul li ul {
@@ -114,13 +117,18 @@ body {
     }
   
     nav ul li a {
-      padding: 10px 0;
+      padding: 10px;
+    }
+  
+    .vuosi2025 {
+      color: silver;
+      padding: 10px;
     }
   }
   
   @media (max-width: 480px) {
     nav {
-      padding: 10px;
+      padding: 12px;
     }
   
     .container {
