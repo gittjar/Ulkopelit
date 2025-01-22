@@ -5,6 +5,11 @@
     color: #333;
     padding: 20px;
   }
+
+  .icon {
+    margin-left: 5px; /* Adjust the margin as needed */
+    vertical-align: middle; /* Align the icon vertically with the text */
+  }
   
   .header-image {
     position: relative;
@@ -90,6 +95,11 @@
     font-size: 1em;
     margin-bottom: 10px;
   }
+
+    .karttalinkki:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
   
   @media (max-width: 768px) {
     .info-cards {

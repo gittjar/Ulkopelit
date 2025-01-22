@@ -5,6 +5,8 @@ import Lisatiedot from './components/Lisatiedot';
 import Osallistujat from './components/Osallistujat';
 import Kartta from './components/Kartta';
 import Ilmoittautuminen from './components/Ilmoittautuminen';
+import { FaChevronDown } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
 // CSS Styles
 import '../src/assets/styles.css';
 import '../src/assets/styles_home.css';
@@ -20,24 +22,24 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">Etusivu <span className='icon'><FaArrowRight /></span></Link>
             </li>
             <li>
-              <span className="vuosi2025">2025</span>
+              <span className="vuosi2025">2025 <span className='icon'><FaChevronDown /></span></span>
               <ul>
                 <li>
-                  <Link to="/2025/lisatiedot">Lisätiedot</Link>
+                  <Link to="/2025/lisatiedot">Lisätiedot <span className='icon'><FaArrowRight /></span></Link>
                 </li>
                 <li>
-                  <Link to="/2025/osallistujat">Osallistujat</Link>
+                  <Link to="/2025/osallistujat">Osallistujat <span className='icon'><FaArrowRight /></span></Link>
                 </li>
                 <li>
-                  <Link to="/2025/kartta">Kartta</Link>
+                  <Link to="/2025/kartta">Kartta <span className='icon'><FaArrowRight /></span></Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link to="/ilmoittautuminen">Ilmoittautuminen</Link>
+              <Link to="/ilmoittautuminen">Ilmoittautuminen <span className='icon'><FaArrowRight /></span></Link>
             </li>
           </ul>
         </nav>

@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/styles_lisatiedot.css';
+import { FaArrowRight } from 'react-icons/fa';
 
 function Lisatiedot() {
   return (
@@ -28,7 +29,9 @@ function Lisatiedot() {
             <div className="number">Sijainti</div>
             <p>Sairionpuisto, 13220 Hämeenlinna
             </p>
-            <Link className='karttalinkki' to="/2025/kartta">Kartta</Link>
+            <Link className='karttalinkki' to="/2025/kartta">
+            Kartta<span className='icon'><FaArrowRight /></span>
+            </Link>
 
                 </div>
         </div>
