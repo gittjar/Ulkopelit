@@ -3,73 +3,124 @@
 .lisatiedot-container {
     font-family: Arial, sans-serif;
     color: #333;
+    padding: 20px;
   }
   
   .header-image {
     position: relative;
     text-align: center;
     color: white;
+    height: 150px;
+    overflow: hidden;
   }
   
   .header-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
+    border-radius: 10px;
   }
   
   .header-image h1 {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 60%;
+    left: 20%;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 3em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.5em;
   }
   
   .content {
     padding: 20px;
   }
   
-  .info-balls {
+  .info-cards {
     display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
+
   }
   
-  .ball {
+  .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    height: 100px;
-    background-color: #007bff;
+    width: 150px;
+    height: 150px;
+    background-color: #120069;
     color: white;
-    border-radius: 50%;
+    border-radius: 10px;
     text-align: center;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.3);
   }
   
-  .ball .number {
-    font-size: 2em;
+  .card .number {
+    font-size: 1.5em;
     font-weight: bold;
+    margin-bottom: 10px;
   }
   
   h2 {
     margin-top: 20px;
+    color: #120069;
   }
   
-  ul {
+  .equipment-list {
     list-style-type: none;
     padding: 0;
+    width: 30%;
   }
   
-  ul li {
+  .equipment-item {
     background: #f8f9fa;
     margin: 5px 0;
     padding: 10px;
-    border-left: 5px solid #007bff;
+    border-left: 5px solid #120069;
+    border-bottom: #120069 1px solid;
+    border-top: #120069 1px solid;
+    border-right: #120069 1px solid;
+
+  }
+
+  .karttalinkki {
+    color: silver;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .info-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 100%;
+      max-width: 300px;
+    }
+    .equipment-list {
+      width: 100%;
+    }
+
+    .header-image {
+        position: relative;
+        text-align: center;
+        color: white;
+        height: 80px;
+        overflow: hidden;
+      }
+
+    .header-image h1 {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.5);
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
   }

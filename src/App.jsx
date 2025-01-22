@@ -1,13 +1,15 @@
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { useState } from 'react';
-import '../src/assets/styles.css';
-import '../src/assets/styles_home.css';
-import '../src/assets/styles_carousel.css';
 import Home from './components/Home';
 import Lisatiedot from './components/Lisatiedot';
 import Osallistujat from './components/Osallistujat';
 import Kartta from './components/Kartta';
 import Ilmoittautuminen from './components/Ilmoittautuminen';
+// CSS Styles
+import '../src/assets/styles.css';
+import '../src/assets/styles_home.css';
+import '../src/assets/styles_carousel.css';
+import '../src/assets/styles_lisatiedot.css';
 
 function App() {
   const [count, setCount] = useState(0);
