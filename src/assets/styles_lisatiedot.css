@@ -1,0 +1,75 @@
+/* ../src/assets/styles_lisatiedot.css */
+
+.lisatiedot-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .header-image {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .header-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .header-image h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 3em;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .info-balls {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .ball {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ball .number {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  h2 {
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background: #f8f9fa;
+    margin: 5px 0;
+    padding: 10px;
+    border-left: 5px solid #007bff;
+  }
