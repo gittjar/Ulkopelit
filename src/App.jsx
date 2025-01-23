@@ -12,6 +12,8 @@ import '../src/assets/styles.css';
 import '../src/assets/styles_home.css';
 import '../src/assets/styles_carousel.css';
 import '../src/assets/styles_lisatiedot.css';
+import '../src/assets/styles_playertable.css';
+import '../src/assets/styles_kartta.css';
 
 function App() {
   const [count, setCount] = useState(0);

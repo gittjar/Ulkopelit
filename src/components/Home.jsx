@@ -8,8 +8,8 @@ function Home() {
   const images = [
     { src: '/images/kuva002.jpg', title: 'Ulkojäiden pelit', description: 'Tule mukaan pelaamaan!' },
     { src: '/images/kuva004.jpg', title: 'Pelataan jääkiekkoa ulkona', description: 'Ulkojäällä jääkiekkoa!' },
-    { src: '/images/kuva005.jpg', title: 'Tule pelaamaan ulkojäille', description: 'Tule mukaan pelaamaan!' },
-    { src: '/images/kuva006.jpg', title: 'Check-in and play', description: 'Tule mukaan pelaamaan!' },
+    { src: '/images/kuva005.jpg', title: 'Sairionpuisto / Hämeenlinna', description: 'Tule mukaan pelaamaan!' },
+    { src: '/images/kuva006.jpg', title: '22.2.2024 klo 14:00', description: 'Tule mukaan pelaamaan!' },
   ];
 
   return (
