@@ -174,5 +174,6 @@ h2 {
   .vastuuvapaus-container p {
     font-size: 0.65rem;
     padding: 4px;
+    font-weight: 700;
   }
 }

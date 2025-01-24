@@ -5,6 +5,8 @@ import Lisatiedot from './components/Lisatiedot';
 import Osallistujat from './components/Osallistujat';
 import Kartta from './components/Kartta';
 import Ilmoittautuminen from './components/Ilmoittautuminen';
+import Kiitos from './components/Kiitos';
+
 import { FaChevronDown } from 'react-icons/fa';
 import { FaArrowRight } from 'react-icons/fa';
 // CSS Styles
@@ -14,6 +16,7 @@ import '../src/assets/styles_carousel.css';
 import '../src/assets/styles_lisatiedot.css';
 import '../src/assets/styles_playertable.css';
 import '../src/assets/styles_kartta.css';
+import '../src/assets/styles_contactform.css';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -52,6 +55,7 @@ function App() {
           <Route path="/2025/osallistujat" element={<Osallistujat />} />
           <Route path="/2025/kartta" element={<Kartta />} />
           <Route path="/ilmoittautuminen" element={<Ilmoittautuminen />} />
+          <Route path="/kiitos" element={<Kiitos />} />
         </Routes>
       </div>
     </Router>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { FaArrowDown } from 'react-icons/fa';
+import { FaArrowDown, FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function Osallistujat() {
   const [players, setPlayers] = useState([
@@ -37,15 +38,18 @@ function Osallistujat() {
 
   return (
     <div className="table-container">
+
       <div className="table-header-image">
         <img src="/images/kuva010.jpg" alt="Header" />
         <h2>Osallistujat 22.2.2025</h2>
       </div>
-      <p>Lista osallistujista.</p>
-
+      <p></p>
       {isModalVisible && (
         <div className="modal">
           <p>Ilmoittautuneita {players.length}/16 ja tilaa on vielä reilusti!</p>
+          <Link to="/ilmoittautuminen" className="signup-button">
+        Ilmoittaudu mukaan <FaArrowRight className="icon" />
+      </Link>
           <button onClick={closeModal}>Sulje</button>
         </div>
       )}
@@ -77,6 +81,8 @@ function Osallistujat() {
           ))}
         </tbody>
       </table>
+     
+   
     </div>
   );
 }
