@@ -17,6 +17,8 @@ function Lisatiedot() {
             <div className="number">22.2.2025</div>
             <p>Ilmoittautuminen alkaa 25. tammikuuta 2025.</p>
           </div>
+
+          
           <div className="card">
             <div className="number">14:00 PM</div>
             <p>Pelataan jääkiekkoa ulkojäillä.</p>
@@ -33,8 +35,11 @@ function Lisatiedot() {
             Kartta<span className='icon'><FaArrowRight /></span>
             </Link>
 
-                </div>
         </div>
+       
+
+        </div>
+        <section className="list-container">
         <h2>Tarvittavat varusteet</h2>
         <ul className="equipment-list">
           <li className="equipment-item">Luistimet</li>
@@ -60,6 +65,8 @@ function Lisatiedot() {
           <li className="equipment-item">Pelit pelataan kaukalossa</li>
           <li className="equipment-item">Mahdolliset jälkipelit sovitaan paikan päällä</li>
         </ul>
+        </section>
+        <section className="vastuuvapaus-container">
         <h2>Vastuuvapauslauseke</h2>
         <p>1. Osallistuminen peleihin on omalla vastuulla. Koollekutsuja ei vastaa mahdollisista tapaturmista tai vahingoista.</p>
         <p>2. Osallistujien tulee noudattaa annettuja sääntöjä ja ohjeita.</p>
@@ -67,7 +74,11 @@ function Lisatiedot() {
         <p>4. Osallistujien tulee käyttää asianmukaisia varusteita. Rikkinäisillä varusteilla pelaaminen on kielletty.</p>
       <p>5. Tämän sivuston ylläpitäjä ei vastaa mahdollisista virheistä tai puutteista sivustolla.</p>
       <p>6. Ylläpitäjä pidättää oikeuden muutoksiin.</p>
+      </section>
+     
       </div>
+
+     
     </div>
   );
 }

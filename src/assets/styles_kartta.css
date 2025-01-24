@@ -1,8 +1,11 @@
 .kartta-container {
-    text-align: center;
-    margin: 0 auto;
+    margin: 20px;
     padding: 20px;
-    max-width: 1200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    position: relative;
+    text-align: center;
   }
   
   .kartta-lisatiedot-container {

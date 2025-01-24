@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../assets/styles_playertable.css';
 import { FaArrowDown } from 'react-icons/fa';
 
 function Osallistujat() {
@@ -8,7 +7,6 @@ function Osallistujat() {
     { name: 'Sidney Crosby (test)', handedness: 'Left', favoriteTeam: 'Pittsburgh Penguins' },
     { name: 'Mika Zibanejad (test)', handedness: 'Right', favoriteTeam: 'New York Rangers' },
     { name: 'Jarno K', handedness: 'Left', favoriteTeam: 'HPK' }
-
   ]);
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'ascending' });
   const [isModalVisible, setIsModalVisible] = useState(true);
@@ -39,7 +37,10 @@ function Osallistujat() {
 
   return (
     <div className="table-container">
-      <h2>Osallistujat 22.2.2025</h2>
+      <div className="table-header-image">
+        <img src="/images/kuva010.jpg" alt="Header" />
+        <h2>Osallistujat 22.2.2025</h2>
+      </div>
       <p>Lista osallistujista.</p>
 
       {isModalVisible && (
