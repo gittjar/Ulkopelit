@@ -179,3 +179,11 @@
     width: 100%;
   }
 }
+
+@media (min-width: 1024px) {
+  .lisatiedot-container-unique
+  {
+    margin: 20px auto;
+    max-width: 800px;
+  }
+}

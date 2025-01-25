@@ -148,8 +148,10 @@ p {
 }
 
 /* Additional media query for larger screens */
+/*
 @media (min-width: 1024px) {
   body {
     margin: 0 10%;
   }
-}
+
+}  */

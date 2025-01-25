@@ -116,3 +116,11 @@ th:hover {
     padding: 8px;
   }
 }
+
+@media (min-width: 1024px) {
+  .table-container
+  {
+    margin: 20px auto;
+    max-width: 800px;
+  }
+}
