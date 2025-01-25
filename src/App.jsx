@@ -17,6 +17,7 @@ import '../src/assets/styles_lisatiedot.css';
 import '../src/assets/styles_playertable.css';
 import '../src/assets/styles_kartta.css';
 import '../src/assets/styles_contactform.css';
+import '../src/assets/styles_kiitos.css';
 
 function App() {
   const [count, setCount] = useState(0);

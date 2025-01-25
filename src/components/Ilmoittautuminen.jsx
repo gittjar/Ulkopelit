@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 function Ilmoittautuminen() {
   const [result, setResult] = useState("");
+  const [playerName, setPlayerName] = useState("");
   const navigate = useNavigate();
 
   const onSubmit = async (event) => {
@@ -21,9 +22,10 @@ function Ilmoittautuminen() {
 
     if (data.success) {
       setResult("Lomake toimitettu onnistuneesti!");
+      setPlayerName(formData.get("name"));
       event.target.reset();
       setTimeout(() => {
-        navigate('/kiitos');
+        navigate('/kiitos', { state: { playerName: formData.get("name") } });
       }, 2000);
     } else {
       console.log("Error", data);
@@ -35,9 +37,8 @@ function Ilmoittautuminen() {
     <div className="contact-form-container">
       <section className="contactform-header-image">
         <img src="/images/kuva008.jpg" alt="Header" />
-        <h1>Ilmoittaudu mukaan</h1>
+        <h1>Ilmoittaudu mukaan!</h1>
       </section>
-      <p>Ilmoittautumislomake 22.2.2025 peleihin</p>
       <form onSubmit={onSubmit}>
         <label>
           Nimesi <span className="required">*</span>

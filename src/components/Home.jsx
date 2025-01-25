@@ -1,6 +1,8 @@
 // src/components/Home.jsx
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
+import { Link } from 'react-router-dom';
+import { FaArrowRight } from 'react-icons/fa';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../assets/styles_carousel.css';
 
@@ -20,6 +22,11 @@ function Home() {
             <img src={image.src} alt={image.title} />
             <div className="carousel-card-content">
               <h1>{image.title}</h1>
+              {index === images.length - 1 && (
+                <Link to="/ilmoittautuminen" className="carousel-button">
+                  Ilmoittautuminen <span className='icon'><FaArrowRight /></span>
+                </Link>
+              )}
             </div>
           </div>
         ))}
