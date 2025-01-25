@@ -1,4 +1,4 @@
-.lisatiedot-container {
+.lisatiedot-container-unique {
   margin: 20px;
   padding: 20px;
   border: 1px solid #ccc;
@@ -8,28 +8,23 @@
   text-align: center;
 }
 
-.icon {
-  margin-left: 5px; /* Adjust the margin as needed */
-  vertical-align: middle; /* Align the icon vertically with the text */
-}
-
-.header-image {
+.header-image-unique {
   position: relative;
   text-align: center;
   color: white;
   height: 150px;
   overflow: hidden;
   width: 100%;
+  border-radius: 8px;
 }
 
-.header-image img {
+.header-image-unique img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
 }
 
-.header-image h1 {
+.header-image-unique h1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -40,140 +35,147 @@
   border-radius: 5px;
 }
 
-.content {
-  padding: 20px;
-  width: 100%;
-}
-
-.info-cards {
+.info-cards-unique {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 150px;
-  height: 150px;
+.card-unique {
+  width: 22%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
   background-color: #120069;
-  color: white;
-  border-radius: 10px;
   text-align: center;
-  padding: 10px;
-  margin: 10px;
-  box-shadow: 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card p {
-  color: silver;
-}
-
-.card .number {
-  font-size: 1.5em;
+.card-unique .number {
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
+  color: thistle;
 }
 
-.list-container {
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
+.card-unique p {
+  color: white;
 }
 
-h2 {
+.karttalinkki-unique {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #5af62b;
+  color: rgb(33, 33, 33);
+  border: 1px solid #181918;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  box-shadow: #181918 2px 2px 2px;
+}
+
+.karttalinkki-unique:hover {
+  background-color: #00e600;
+}
+
+.icon-unique {
+  margin-left: 5px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.list-container-unique {
   margin-top: 20px;
-  color: #120069;
 }
 
-.equipment-list {
+.h2-unique {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #0b0b0b;
+}
+
+.equipment-list-unique {
   list-style-type: none;
   padding: 0;
-  width: 100%;
 }
 
-.equipment-item {
-  background: #f8f9fa;
-  margin: 5px 0;
-  padding: 10px;
-  border-left: 5px solid #120069;
-  border-bottom: #120069 1px solid;
-  border-top: #120069 1px solid;
-  border-right: #120069 1px solid;
+.equipment-item-unique {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
-.karttalinkki {
-  color: silver;
-  font-size: 1em;
-  margin-bottom: 10px;
+.vastuuvapaus-container-unique {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #c3e6cb;
+  background-color: #d4edda;
+  border-radius: 8px;
+  text-align: left;
 }
 
-.karttalinkki:hover {
-  color: #fff;
-  text-decoration: underline;
+.vastuuvapaus-container-unique h2 {
+  font-size: 1.5rem;
+  padding: 3px;
+  text-align: center;
+  color: rgb(4, 4, 4);
+  background-color: #ff868e;
+  border-radius: 5px;
+}
+
+.vastuuvapaus-container-unique p {
+  font-size: 0.9rem;
+  padding: 4px;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
-  .lisatiedot-container {
-    margin-left: 0.3rem;
-    margin-right: 0.3rem;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    position: relative;
-    text-align: center;
-    
-  }
-
-  .info-cards {
+  .info-cards-unique {
     flex-direction: column;
     align-items: center;
-    margin-left: -3rem;
   }
 
-  .card {
-    width: 70%;
-    margin-bottom: 10px;
+  .card-unique {
+    width: 80%;
+    margin-left: 0;
   }
 
-  .equipment-list {
+  .equipment-list-unique {
     width: 90%;
   }
 
-  .header-image {
+  .header-image-unique {
     height: 100px;
   }
 
-  .header-image h1 {
+  .header-image-unique h1 {
     top: 50%;
-    font-size: 1rem;
+    font-size: 0.85rem;
   }
 
-  .vastuuvapaus-container {
-    margin-left: 0rem;
-    margin-right: 0rem;
-    border-radius: 8px;
-    background-color: #ffe7cd;
-    position: relative;
-    text-align: left;
+  .vastuuvapaus-container-unique {
     width: 90%;
   }
 
-  .vastuuvapaus-container h2 {
-    font-size: 1.5rem;
-    padding: 3px;
-    text-align: center  ;
-    color: rgb(255, 124, 36);
+  .vastuuvapaus-container-unique h2 {
+    font-size: 1rem;
   }
 
-  .vastuuvapaus-container p {
+  .vastuuvapaus-container-unique p {
     font-size: 0.65rem;
-    padding: 4px;
-    font-weight: 700;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-unique {
+    width: 80%;
+  }
+
+  .equipment-list-unique {
+    width: 100%;
   }
 }

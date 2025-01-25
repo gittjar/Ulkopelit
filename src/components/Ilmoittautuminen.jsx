@@ -33,17 +33,32 @@ function Ilmoittautuminen() {
 
   return (
     <div className="contact-form-container">
-      <Link to="/">
-        <button>Etusivu</button>
-      </Link>
-      <h2>Ilmoittautuminen</h2>
+      <section className="contactform-header-image">
+        <img src="/images/kuva008.jpg" alt="Header" />
+        <h1>Ilmoittaudu mukaan</h1>
+      </section>
       <p>Ilmoittautumislomake 22.2.2025 peleihin</p>
       <form onSubmit={onSubmit}>
-        <input type="text" name="name" placeholder="Nimesi" required />
-        <input type="text" name="handles" placeholder="Mailan kätisyys" />
-        <input type="text" name="team" placeholder="Suosikkijoukkue" />
-        <input type="email" name="email" placeholder="Sähköposti" required />
-        <textarea name="message" placeholder="Valinnaiset lisätiedot"></textarea>
+        <label>
+          Nimesi <span className="required">*</span>
+          <input type="text" name="name" placeholder="Nimesi" required />
+        </label>
+        <label>
+          Mailan kätisyys
+          <input type="text" name="handles" placeholder="Mailan kätisyys" />
+        </label>
+        <label>
+          Suosikkijoukkue
+          <input type="text" name="team" placeholder="Suosikkijoukkue" />
+        </label>
+        <label>
+          Sähköposti <span className="required">*</span>
+          <input type="email" name="email" placeholder="Sähköposti" required />
+        </label>
+        <label>
+          Valinnaiset lisätiedot
+          <textarea name="message" placeholder="Valinnaiset lisätiedot"></textarea>
+        </label>
         <button type="submit">Lähetä</button>
       </form>
       <span>{result}</span>
