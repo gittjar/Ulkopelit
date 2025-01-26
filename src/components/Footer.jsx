@@ -12,10 +12,11 @@ const Footer = () => {
         <Link to="/2025/osallistujat">Osallistujat <span className='icon'><FaArrowRight /></span></Link>
         <Link to="/2025/kartta">Kartta <span className='icon'><FaArrowRight /></span></Link>
         <Link to="/ilmoittautuminen">Ilmoittautuminen <span className='icon'><FaArrowRight /></span></Link>
-      </div>
-      <div className="footer-info">
+        <div className="footer-info">
         <p>This webapp is created with React <span className="react-logo"><FaReact /></span> and Vite <span className="vite-logo"><SiVite /></span> 2025</p>
       </div>
+      </div>
+
     </footer>
   );
 };
