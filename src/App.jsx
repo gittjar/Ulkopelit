@@ -6,6 +6,7 @@ import Osallistujat from './components/Osallistujat';
 import Kartta from './components/Kartta';
 import Ilmoittautuminen from './components/Ilmoittautuminen';
 import Kiitos from './components/Kiitos';
+import Footer from './components/Footer';
 
 import { FaChevronDown } from 'react-icons/fa';
 import { FaArrowRight } from 'react-icons/fa';
@@ -18,6 +19,7 @@ import '../src/assets/styles_playertable.css';
 import '../src/assets/styles_kartta.css';
 import '../src/assets/styles_contactform.css';
 import '../src/assets/styles_kiitos.css';
+import '../src/assets/styles_footer.css';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -58,6 +60,7 @@ function App() {
           <Route path="/ilmoittautuminen" element={<Ilmoittautuminen />} />
           <Route path="/kiitos" element={<Kiitos />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

@@ -1,0 +1,55 @@
+/* src/assets/footer-styles.css */
+.footer {
+    background-color: #120069;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 12px; /* Smaller font size */
+  }
+
+  
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+}
+  
+.footer-links a {
+    color: silver;
+    text-decoration: none;
+  }
+
+    .footer-links a:hover {
+        color: white;
+    }
+  
+
+  
+  .footer-info {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .footer-info p {
+    margin: 0;
+    color: silver;
+  }
+  
+  .vite-logo {
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-info {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }

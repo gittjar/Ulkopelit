@@ -42,11 +42,15 @@ function Ilmoittautuminen() {
       <form onSubmit={onSubmit}>
         <label>
           Nimesi <span className="required">*</span>
-          <input type="text" name="name" placeholder="Nimesi" required />
+          <input type="text" name="name" placeholder="Nimesi tai nimimerkki" required />
         </label>
         <label>
-          Mailan kätisyys
-          <input type="text" name="handles" placeholder="Mailan kätisyys" />
+          Mailan kätisyys<br></br>
+          <select name="handles" required>
+            <option value="">--Valitse--</option>
+            <option value="Left">Left</option>
+            <option value="Right">Right</option>
+          </select>
         </label>
         <label>
           Suosikkijoukkue
@@ -63,6 +67,7 @@ function Ilmoittautuminen() {
         <button type="submit">Lähetä</button>
       </form>
       <span>{result}</span>
+      <p>Tietojasi ei luovuteta eteenpäin ja pelien (22.2.2025) jälkeen ne tuhotaan.</p>
     </div>
   );
 }

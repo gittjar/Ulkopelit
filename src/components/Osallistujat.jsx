@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 function Osallistujat() {
   const [players, setPlayers] = useState([
-    { name: 'Connor McDavid (test)', handedness: 'Left', favoriteTeam: 'Edmonton Oilers' },
-    { name: 'Sidney Crosby (test)', handedness: 'Left', favoriteTeam: 'Pittsburgh Penguins' },
-    { name: 'Mika Zibanejad (test)', handedness: 'Right', favoriteTeam: 'New York Rangers' },
+    { name: 'Pelaaja 7', handedness: 'Left', favoriteTeam: 'Edmonton Oilers' },
+    { name: 'Playertest 1', handedness: 'Left', favoriteTeam: 'Pittsburgh Penguins' },
+    { name: 'Testplayer 2', handedness: 'Right', favoriteTeam: 'New York Rangers' },
     { name: 'Jarno K', handedness: 'Left', favoriteTeam: 'HPK' }
   ]);
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'ascending' });
