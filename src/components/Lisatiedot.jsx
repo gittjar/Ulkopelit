@@ -21,7 +21,7 @@ function Lisatiedot() {
             <p>Pelataan jääkiekkoa ulkojäillä.</p>
           </div>
           <div className="card-unique">
-            <div className="number">10-16</div>
+            <div className="number">10-16 pelaajaa</div>
             <p>Pelaajia tarvitaan vähintään kymmenen.</p>
             <Link className='karttalinkki-unique' to="/ilmoittautuminen">
               Ilmoittaudu<span className='icon-unique'><FaArrowRight /></span>
