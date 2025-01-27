@@ -8,7 +8,8 @@ function Osallistujat() {
     { name: 'Playertest 1', handedness: 'Left', favoriteTeam: 'Pittsburgh Penguins' },
     { name: 'Testplayer 2', handedness: 'Right', favoriteTeam: 'New York Rangers' },
     { name: 'Jarno K', handedness: 'Left', favoriteTeam: 'HPK' },
-    { name: 'Jussi', handedness: 'Left', favoriteTeam: 'HPK' }
+    { name: 'Jussi', handedness: 'Left', favoriteTeam: 'HPK' },
+    { name: 'Richmond B', handedness: 'Right', favoriteTeam: 'Frozen' },
 
 
   ]);
