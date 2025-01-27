@@ -113,7 +113,7 @@
   margin-top: 20px;
   padding: 20px;
   border: 1px solid #c3e6cb;
-  background-color: #d4edda;
+  background-color: #8cffa7;
   border-radius: 8px;
   text-align: left;
 }
@@ -123,8 +123,9 @@
   padding: 3px;
   text-align: center;
   color: rgb(4, 4, 4);
-  background-color: #ff868e;
+  background-color: #0cfb98;
   border-radius: 5px;
+  border: #0e0e0e 1px solid;
 }
 
 .vastuuvapaus-container-unique p {

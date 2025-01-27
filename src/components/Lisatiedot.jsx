@@ -1,9 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/styles_lisatiedot.css';
 import { FaArrowRight } from 'react-icons/fa';
 
 function Lisatiedot() {
+  const calculateTimeLeft = () => {
+    const eventDate = new Date('2025-02-22T14:00:00+02:00');
+    const now = new Date();
+    const difference = eventDate - now;
+
+    let timeLeft = {};
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60)
+      };
+    }
+
+    return timeLeft;
+  };
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="lisatiedot-container-unique">
       <div className="header-image-unique">
@@ -33,6 +62,10 @@ function Lisatiedot() {
             <Link className='karttalinkki-unique' to="/2025/kartta">
               Kartta<span className='icon-unique'><FaArrowRight /></span>
             </Link>
+          </div>
+          <div className="card-unique">
+            <div className="number">Aikaa jäljellä</div>
+            <p>{timeLeft.days} päivää {timeLeft.hours} tuntia {timeLeft.minutes} minuuttia {timeLeft.seconds} sekuntia</p>
           </div>
         </div>
         <section className="list-container-unique">
