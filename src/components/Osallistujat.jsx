@@ -7,7 +7,10 @@ function Osallistujat() {
     { name: 'Pelaaja 7', handedness: 'Left', favoriteTeam: 'Edmonton Oilers' },
     { name: 'Playertest 1', handedness: 'Left', favoriteTeam: 'Pittsburgh Penguins' },
     { name: 'Testplayer 2', handedness: 'Right', favoriteTeam: 'New York Rangers' },
-    { name: 'Jarno K', handedness: 'Left', favoriteTeam: 'HPK' }
+    { name: 'Jarno K', handedness: 'Left', favoriteTeam: 'HPK' },
+    { name: 'Jussi', handedness: 'Left', favoriteTeam: 'HPK' }
+
+
   ]);
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'ascending' });
   const [isModalVisible, setIsModalVisible] = useState(true);

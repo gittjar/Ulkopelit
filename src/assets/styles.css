@@ -1,7 +1,8 @@
 /* src/assets/styles.css */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f4f8ff;
+ /* background-color: #f4f8ff; */ /* Light blue background color */
+  background-color: #120069;;
   color: #333;
   padding: 0;
   margin: 0;
