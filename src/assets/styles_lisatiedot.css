@@ -50,7 +50,28 @@
   border-radius: 8px;
   background-color: #120069;
   text-align: center;
-  box-shadow: 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card-unique::before,
+.card-unique::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid black;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.card-unique::before {
+  transform: translate(4px, 4px);
+}
+
+.card-unique::after {
+  transform: translate(8px, 8px);
 }
 
 .card-unique .number {
