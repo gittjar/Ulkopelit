@@ -51,28 +51,10 @@
   background-color: #120069;
   text-align: center;
   position: relative;
+  box-shadow: rgba(18, 0, 105, 0.3) 6px 12px 0px; /* Adjust the opacity value as needed */
 }
 
-.card-unique::before,
-.card-unique::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 1px solid black;
-  border-radius: 8px;
-  pointer-events: none;
-}
 
-.card-unique::before {
-  transform: translate(4px, 4px);
-}
-
-.card-unique::after {
-  transform: translate(8px, 8px);
-}
 
 .card-unique .number {
   font-size: 1.5rem;
