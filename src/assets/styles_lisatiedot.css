@@ -56,11 +56,14 @@
 
 
 
-.card-unique .number {
+.number {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
   color: thistle;
+  border: thistle 1px solid;
+  border-radius: 25px;
+  padding: 5px;
 }
 
 .card-unique p {
@@ -99,6 +102,9 @@
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #0b0b0b;
+  border: #120069 1px solid;
+  border-radius: 15px;
+  padding: 5px;
 }
 
 .equipment-list-unique {
@@ -127,7 +133,7 @@
   text-align: center;
   color: rgb(4, 4, 4);
   background-color: #0cfb98;
-  border-radius: 5px;
+  border-radius: 15px;
   border: #0e0e0e 1px solid;
 }
 
