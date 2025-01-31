@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/styles_lisatiedot.css';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight, FaLayerGroup, FaGavel, FaPaste } from 'react-icons/fa';
 
 function Lisatiedot() {
   const calculateTimeLeft = () => {
@@ -69,7 +69,7 @@ function Lisatiedot() {
           </div>
         </div>
         <section className="list-container-unique">
-          <h2 className="h2-unique">Tarvittavat varusteet</h2>
+          <h2 > <span className="h2-unique">Tarvittavat varusteet <span className='icon-unique'><FaLayerGroup /> </span> </span></h2>
           <ul className="equipment-list-unique">
             <li className="equipment-item-unique">Luistimet</li>
             <li className="equipment-item-unique">Oma maila</li>
@@ -77,7 +77,7 @@ function Lisatiedot() {
             <li className="equipment-item-unique">Kypärä (suositus)</li>
             <li className="equipment-item-unique">Pelipaita (jos löytyy)</li>
           </ul>
-          <h2 className="h2-unique">Säännöt</h2>
+          <h2 ><span className="h2-unique">Säännöt <span className='icon-unique'><FaGavel /> </span> </span></h2>
           <ul className="equipment-list-unique">
             <li className="equipment-item-unique">Tasakentät</li>
             <li className="equipment-item-unique">Ei kohotuksia</li>
@@ -86,7 +86,7 @@ function Lisatiedot() {
             <li className="equipment-item-unique">Sallittu kaiken ikäisille</li>
             <li className="equipment-item-unique">1 kosketus syötöstä maalit</li>
           </ul>
-          <h2 className="h2-unique">Muut tiedot</h2>
+          <h2 ><span className="h2-unique">Muut tiedot <span className='icon-unique'><FaPaste/> </span></span></h2>
           <ul className="equipment-list-unique">
             <li className="equipment-item-unique">Osallistuminen omalla vastuulla</li>
             <li className="equipment-item-unique">Pelaajia tarvitaan vähintään 10</li>
@@ -96,7 +96,7 @@ function Lisatiedot() {
           </ul>
         </section>
         <section className="vastuuvapaus-container-unique">
-          <h2 className="h2-unique">Vastuuvapauslauseke</h2>
+          <h2>Vastuuvapauslauseke</h2>
           <p>1. Osallistuminen peleihin on omalla vastuulla. Koollekutsuja ei vastaa mahdollisista tapaturmista tai vahingoista.</p>
           <p>2. Osallistujien tulee noudattaa annettuja sääntöjä ja ohjeita.</p>
           <p>3. Osallistujien tulee olla terveitä ja oireettomia.</p>
