@@ -37,11 +37,11 @@
 
 .info-cards-unique {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-columns: 1fr;
   gap: 20px;
   margin-top: 20px;
+  justify-items: center;
 }
-
 
 .card-unique {
   margin-bottom: 20px;
@@ -52,9 +52,9 @@
   text-align: center;
   position: relative;
   box-shadow: rgba(18, 0, 105, 0.3) 6px 12px 0px; /* Adjust the opacity value as needed */
+  width: 100%;
+  max-width: 210px;
 }
-
-
 
 .number {
   font-size: 1.5rem;
@@ -96,7 +96,7 @@
 
 .list-container-unique {
   margin-top: 3rem;
-  text-align: left  ;
+  text-align: left;
 }
 
 .h2-unique {
@@ -128,8 +128,6 @@
   text-align: left;
 }
 
-
-
 .vastuuvapaus-container-unique p {
   font-size: 0.9rem;
   padding: 4px;
@@ -138,14 +136,12 @@
 
 @media (max-width: 768px) {
   .info-cards-unique {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-
   }
 
   .card-unique {
-    width: 80%;
-    margin-left: 0;
+   max-width: 240px;
+    margin-left: 0px;
   }
 
   .equipment-list-unique {
@@ -180,18 +176,25 @@
   }
 
   .card-unique {
-    width: 80%;
+    max-width: 80%;
   }
 
   .equipment-list-unique {
     width: 100%;
   }
+
+  .h2-unique {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 1024px) {
-  .lisatiedot-container-unique
-  {
+  .lisatiedot-container-unique {
     margin: 20px auto;
     max-width: 800px;
+  }
+
+  .info-cards-unique {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
