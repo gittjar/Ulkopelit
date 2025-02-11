@@ -7,6 +7,7 @@ import Kartta from './components/Kartta';
 import Ilmoittautuminen from './components/Ilmoittautuminen';
 import Kiitos from './components/Kiitos';
 import Footer from './components/Footer';
+import NotFound from './components/NotFound';
 
 import { FaChevronDown } from 'react-icons/fa';
 import { FaArrowRight } from 'react-icons/fa';
@@ -59,6 +60,7 @@ function App() {
           <Route path="/2025/kartta" element={<Kartta />} />
           <Route path="/ilmoittautuminen" element={<Ilmoittautuminen />} />
           <Route path="/kiitos" element={<Kiitos />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>

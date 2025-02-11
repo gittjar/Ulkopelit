@@ -104,6 +104,11 @@ p {
   margin: 20px;
 }
 
+.pagenotfound {
+  text-align: center;
+  margin-top: 20%;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   nav ul {
