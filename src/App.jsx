@@ -21,6 +21,7 @@ import '../src/assets/styles_kartta.css';
 import '../src/assets/styles_contactform.css';
 import '../src/assets/styles_kiitos.css';
 import '../src/assets/styles_footer.css';
+import '../src/assets/styles_notfound.css';
 
 function App() {
   const [count, setCount] = useState(0);
