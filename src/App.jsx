@@ -9,8 +9,8 @@ import Kiitos from './components/Kiitos';
 import Footer from './components/Footer';
 import NotFound from './components/NotFound';
 
-import { FaChevronDown } from 'react-icons/fa';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaChevronDown, FaArrowRight } from 'react-icons/fa';
+
 // CSS Styles
 import '../src/assets/styles.css';
 import '../src/assets/styles_home.css';
