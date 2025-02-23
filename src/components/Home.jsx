@@ -9,9 +9,9 @@ import '../assets/styles_carousel.css';
 function Home() {
   const images = [
     { src: '/images/kuva002.jpg', title: 'Ulkojäiden pelit', description: 'Tule mukaan pelaamaan!' },
-    { src: '/images/kuva004.jpg', title: 'Pelataan jääkiekkoa ulkona', description: 'Ulkojäällä jääkiekkoa!' },
-    { src: '/images/kuva005.jpg', title: 'Sairionpuisto / Hämeenlinna', description: 'Tule mukaan pelaamaan!' },
-    { src: '/images/kuva006.jpg', title: '22.2.2025 klo 14:00', description: 'Tule mukaan pelaamaan!' },
+    { src: '/images/kuva004.jpg', title: 'Seuraava pelitapahtuma on vuonna 2026!', description: 'Ulkojäällä jääkiekkoa!' },
+    { src: '/images/kuva005.jpg', title: 'Sairionpuisto > Hämeenlinna', description: 'Tule mukaan pelaamaan!' },
+    { src: '/images/kuva006.jpg', title: '--.--.2026 klo 14:00', description: 'Tule mukaan pelaamaan!' },
   ];
 
   return (

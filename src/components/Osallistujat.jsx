@@ -4,12 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Osallistujat() {
   const [players, setPlayers] = useState([
-    { name: 'Pelaaja 7', handedness: 'Left', favoriteTeam: 'Edmonton Oilers' },
-    { name: 'Playertest 1', handedness: 'Left', favoriteTeam: 'Pittsburgh Penguins' },
-    { name: 'Testplayer 2', handedness: 'Right', favoriteTeam: 'New York Rangers' },
-    { name: 'Jarno K', handedness: 'Left', favoriteTeam: 'HPK' },
-    { name: 'Jussi', handedness: 'Left', favoriteTeam: 'HPK' },
-    { name: 'Richmond B', handedness: 'Right', favoriteTeam: 'Frozen' },
+    { name: 'Pelaaja 1', handedness: 'Left', favoriteTeam: 'Edmonton Oilers' },
 
 
   ]);
@@ -45,7 +40,7 @@ function Osallistujat() {
 
       <div className="table-header-image">
         <img src="/images/kuva010.jpg" alt="Header" />
-        <h2>Osallistujat 22.2.2025</h2>
+        <h2>Osallistujat --.--.2026</h2>
       </div>
       <p></p>
       {isModalVisible && (

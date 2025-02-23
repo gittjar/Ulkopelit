@@ -37,13 +37,13 @@ function Lisatiedot() {
     <div className="lisatiedot-container-unique">
       <div className="header-image-unique">
         <img src="/images/kuva009.jpg" alt="Header" />
-        <h1>Lisätietoa vuoden 2025 tapahtumasta</h1>
+        <h1>Lisätietoa vuoden 2026 tapahtumasta</h1>
       </div>
       <div className="content-unique">
         <div className="info-cards-unique">
           <div className="card-unique">
-            <div className="number">22.2.2025</div>
-            <p>Ilmoittautuminen alkaa 25. tammikuuta 2025.</p>
+            <div className="number">--.--.2026</div>
+            <p>Ilmoittautuminen alkaa 25. tammikuuta 2026.</p>
           </div>
           <div className="card-unique">
             <div className="number">klo 14:00</div>

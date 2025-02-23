@@ -35,16 +35,16 @@ function App() {
               <Link to="/">Etusivu <span className='icon'><FaArrowRight /></span></Link>
             </li>
             <li>
-              <span className="vuosi2025">2025 <span className='icon'><FaChevronDown /></span></span>
+              <span className="vuosi2025">2026 <span className='icon'><FaChevronDown /></span></span>
               <ul>
                 <li>
-                  <Link to="/2025/lisatiedot">Lisätiedot <span className='icon'><FaArrowRight /></span></Link>
+                  <Link to="/2026/lisatiedot">Lisätiedot <span className='icon'><FaArrowRight /></span></Link>
                 </li>
                 <li>
-                  <Link to="/2025/osallistujat">Osallistujat <span className='icon'><FaArrowRight /></span></Link>
+                  <Link to="/2026/osallistujat">Osallistujat <span className='icon'><FaArrowRight /></span></Link>
                 </li>
                 <li>
-                  <Link to="/2025/kartta">Kartta <span className='icon'><FaArrowRight /></span></Link>
+                  <Link to="/2026/kartta">Kartta <span className='icon'><FaArrowRight /></span></Link>
                 </li>
               </ul>
             </li>
@@ -56,9 +56,9 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/2025/lisatiedot" element={<Lisatiedot />} />
-          <Route path="/2025/osallistujat" element={<Osallistujat />} />
-          <Route path="/2025/kartta" element={<Kartta />} />
+          <Route path="/2026/lisatiedot" element={<Lisatiedot />} />
+          <Route path="/2026/osallistujat" element={<Osallistujat />} />
+          <Route path="/2026/kartta" element={<Kartta />} />
           <Route path="/ilmoittautuminen" element={<Ilmoittautuminen />} />
           <Route path="/kiitos" element={<Kiitos />} />
           <Route path="*" element={<NotFound />} />

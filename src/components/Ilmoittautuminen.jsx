@@ -37,16 +37,16 @@ function Ilmoittautuminen() {
     <div className="contact-form-container">
       <section className="contactform-header-image">
         <img src="/images/kuva008.jpg" alt="Header" />
-        <h1>Ilmoittaudu mukaan!</h1>
+        <h1>Ilmoittautuminen suljettu ... avataan 2026</h1>
       </section>
       <form onSubmit={onSubmit}>
         <label>
           Nimesi <span className="required">*</span>
-          <input type="text" name="name" placeholder="Nimesi tai nimimerkki" required />
+          <input type="text" name="name" placeholder="Nimesi tai nimimerkki" required disabled/>
         </label>
         <label>
           Mailan kätisyys<br></br>
-          <select name="handles" required>
+          <select name="handles" required disabled>
             <option value="">--Valitse--</option>
             <option value="Left">Left</option>
             <option value="Right">Right</option>
@@ -54,20 +54,23 @@ function Ilmoittautuminen() {
         </label>
         <label>
           Suosikkijoukkue
-          <input type="text" name="team" placeholder="Suosikkijoukkue" />
+          <input type="text" name="team" placeholder="Suosikkijoukkue" disabled/>
         </label>
         <label>
           Sähköposti <span className="required">*</span>
-          <input type="email" name="email" placeholder="Sähköposti" required />
+          <input type="email" name="email" placeholder="Sähköposti" required disabled/>
         </label>
         <label>
           Valinnaiset lisätiedot
-          <textarea name="message" placeholder="Valinnaiset lisätiedot"></textarea>
+          <textarea name="message" placeholder="Valinnaiset lisätiedot" disabled></textarea>
         </label>
-        <button type="submit">Lähetä</button>
+        <button type="submit" disabled>Lähetä</button>
       </form>
+      <div className="form-overlay">
+        <span>Ilmoittautuminen suljettu</span>
+      </div>
       <span>{result}</span>
-      <p>Tietojasi ei luovuteta eteenpäin ja pelien (22.2.2025) jälkeen ne tuhotaan.</p>
+      <p>Tietojasi ei luovuteta eteenpäin ja pelien (--.--.2026) jälkeen ne tuhotaan.</p>
     </div>
   );
 }

@@ -8,9 +8,9 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-links">
         <Link to="/">Etusivu <span className='icon'><FaArrowRight /></span></Link>
-        <Link to="/2025/lisatiedot">Lisätiedot <span className='icon'><FaArrowRight /></span></Link>
-        <Link to="/2025/osallistujat">Osallistujat <span className='icon'><FaArrowRight /></span></Link>
-        <Link to="/2025/kartta">Kartta <span className='icon'><FaArrowRight /></span></Link>
+        <Link to="/2026/lisatiedot">Lisätiedot <span className='icon'><FaArrowRight /></span></Link>
+        <Link to="/2026/osallistujat">Osallistujat <span className='icon'><FaArrowRight /></span></Link>
+        <Link to="/2026/kartta">Kartta <span className='icon'><FaArrowRight /></span></Link>
         <Link to="/ilmoittautuminen">Ilmoittautuminen <span className='icon'><FaArrowRight /></span></Link>
         <br />
         <div className="footer-info">

@@ -11,7 +11,7 @@ function Kiitos() {
       <p>Kiitos ilmoittautumisesta!</p>
       <p>Nimesi lisätään pian listalle.</p>
       <p>Ilmoita tällä samalla lomakkeella, jos et pääsekään pelaamaan!</p>
-      <p>Kiekko tippuu jäähän 22.2.2025 klo 14:00</p>
+      <p>Kiekko tippuu jäähän --.--.2026 klo 14:00</p>
       <p>Sairionpuisto, 13220 Hämeenlinna</p>
       <p>Nähdään pian!</p>
     </div>
