@@ -17,7 +17,7 @@ nav {
   background-color: #120069;
   font-weight: 600;
   padding: 10px 20px;
-  box-shadow: 0 4px 1200px rgba(184, 0, 217, 0.8), 0 10px 20px #120069;; 
+  box-shadow: 10px 4px 1200px rgba(184, 0, 217); 
   border-radius: 0; /* Sharp corners */
   z-index: 9999;
 }

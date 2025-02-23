@@ -59,7 +59,7 @@ function Lisatiedot() {
           <div className="card-unique">
             <div className="number">Sijainti</div>
             <p>Sairionpuisto, 13220 Hämeenlinna</p>
-            <Link className='karttalinkki-unique' to="/2025/kartta">
+            <Link className='karttalinkki-unique' to="/2026/kartta">
               Kartta<span className='icon-unique'><FaArrowRight /></span>
             </Link>
           </div>
